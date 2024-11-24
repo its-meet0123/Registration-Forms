@@ -8,79 +8,67 @@
 </head>
 <body>
    <div class="container-fluid p-5">
-     <form>
+     <form class="bg-light">
          <p class="text-primary"><b>Click here for imporatent points to be noted</b></p>
-         <table class="table table-bordered table-sm">
-             <tbody>
-                 <tr class="table-light" style="border: 1px solid white;">
-                     <td style="width: 15rem;"><label for="name">First Name</label></td>
-                     <td><input type="text"> (Maximum 35 Characters)</td>
-                 </tr>
-                 <tr class="table-active" style="border: 1px solid white;">
-                     <td><label for="name">Confirm First Name</label></td>
-                     <td><input type="text"> (Maximum 35 Characters)</td> 
-                 </tr>
-                 <tr class="table-light" style="border: 1px solid white;">
-                     <td><label for="name">Middle Name</label></td>
-                     <td><input type="text"> (Maximum 35 Characters)</td>
-                 </tr>
-                 <tr class="table-active" style="border: 1px solid white;">
-                     <td><label for="name">Confirm Middle Name</label></td>
-                     <td><input type="text"> (Maximum 35 Characters)</td> 
-                 </tr>
-                 <tr class="table-light" style="border: 1px solid white;">
-                     <td><label for="name">Last Name</label></td>
-                     <td><input type="text"> (Maximum 35 Characters)</td>
-                 </tr>
-                 <tr class="table-active" style="border: 1px solid white;">
-                     <td><label for="name">Confirm Last Name</label></td>
-                     <td><input type="text"> (Maximum 35 Characters)</td> 
-                 <tr class="table-light" style="border: 1px solid white;">
-                     <td><label for="name">Full Name</label></td>
-                     <td class="input-group input-group-sm "><input type="text" class="form-control"> (Maximum 35 Characters)</td>
-                 </tr>
-                 <tr class="table-active" style="border: 1px solid white;">
-                     <td><label for="info"></label></td>
-                     <td><P class="text-primary" style="font-size: 0.7rem;">The Name entered the online application form should match exactly with the requisite documents (photo ID etc.) to be produced at the time of the examination and interview. You will be debarred from the selection process, if there is any discrepancy (difference) in the name entered by you in the online application form and the name printed in the documents produced at the time of examination/ interview. However only 35 characters will be printed on your call letter. Any request for subsequent changes/ consideration regarding any changes will not be entertained.</P></td>
-                 </tr>
-                 <tr class="table-light" style="border: 1px solid white;">
-                     <td>Mobile No.</td>
-                     <td>+91<input type="text"> (10 digits)   <b>Please Do not prefix zero(0)</b></td>
-                 </tr>
-                 <tr class="table-active" style="border: 1px solid white;">
-                     <td>Confirm Mobile No.</td>
-                     <td>+91<input type="text"> (10 digits)   <b>Please Do not prefix zero(0)</b></td>
-                 </tr>
-                 <tr class="table-light" style="border: 1px solid white;">
-                    <td>Alternative Number (Mobile No/ Landline No):</td>
-                    <td>+91<input type="text">(10 digits)   <b>Please Do not prefix zero(0)</b></td>
-                 </tr>
-                 <tr class="table-active" style="border: 1px solid white;">
-                     <td></td>
-                     <td><p class="text-primary" style="font-size: 0.7rem;">Please node that the mentinoned mobile number and email id will be the only way to notify you on the updates. it is in your own interst that the mobile no & email id vaild and should be kept active till the completion of this of selection process. Any requests for subsequent changes/consideration regarding any will not entertained.</p></td>
-                 </tr>
-                 <tr class="table-light" style="border: 1px solid white;">
-                     <td>Email ID</td>
-                     <td> <input type="text"> (Maximum 60 Characters)</td>
-                 </tr>
-                 <tr class="table-active" style="border: 1px solid white">
-                     <td>Confirm Email ID</td>
-                     <td><input type="text">(Maximum 60 Characters)</td>
-                 </tr>
-                 <tr class="table-light" style="border: 1px solid white;">
-                     <td>  </td>
-                     <td><P class="text-primary" style="font-size: 0.7rem;">Enter the Word in the textbox as in the image</P></td>
-                 </tr>
-                 <tr class="table-active" style="border: 1px solid white;">
-                     <td>Security code</td>
-                     <td><input type="text"></td>
-                 </tr> 
-             </tbody>
-         </table>
-         <div class="container-fluid mt-3" style="text-align: right;"> 
-             <input type="submit" class="btn btn-primary" value="Save & Next">
+         
+         <div class="row">
+             <label for="name">Student Name</label>
+             <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+             </div>
+             <div class="col">
+                 <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+             </div>
          </div>
-     </form>
+         <div class="row mt-3">
+             <label for ="name">Father Name</label>
+             <div class="col">
+                 <input type="text" class="form-control" placeholder="First name" aria-label="Father name">
+             </div>
+             <div class="col">
+                 <input type="text" class="form-control" placeholder="Last name" aria-label="Father name">
+             </div>
+         </div>
+         <div class="row mt-3">
+            <label for ="name">Mother Name</label>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="Mother name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Mother name">
+            </div>
+         </div>
+         <div class="container  bg-active my-3">
+             <p class=" small text-info">The Name entered in the online application form should match exactly withe the requisite documents (photo ID etc.) to be produced at the time of the examination and interview. You will be debarred from the selection process. if there is any discrepancy (difference) in the name in the application form.</p>
+         </div>
+         <div class="col-sm-5">
+             <div class="input-group mb-3">
+                 <span class="input-group-text col-sm-4">Mobile No.</span>
+                 <input type="number" class="form-control" placeholder="+91">
+             </div>
+             <div class="input-group mb-3">
+                 <span class="input-group-text col-sm-4"> Confirm Mobile No.</span>
+                 <input type="number" class="form-control" placeholder="+91">
+             </div>
+             <div class="input-group mb-3">
+                 <span class="input-group-text col-sm-4">  Alternative Number</span>
+                 <input type="number" class="form-control" placeholder="+91">
+             </div>
+          </div>
+         <div class="container  bg-active my-3">
+             <p class=" small text-info">Please note that the mentinoned mobile number and email id will be the only way to notify you on the updares. it id in your own inrerest that the mobile no & email should be and should be kept active till the completion of this round of selection process.</p>
+         </div>
+         <div class="col-sm-5">
+             <div class="input-group mb-3">
+                 <span class="input-group-text col-sm-4">Email ID.</span>
+                 <input type="text" class="form-control" placeholder="@gmail.com">
+              </div>
+             <div class="input-group mb-3">
+                 <span class="input-group-text col-sm-4"> Confirm Email ID.</span>
+                 <input type="text" class="form-control" placeholder="@gmail.com">
+             </div>
+         </div>
+      </form>
    </div>
     
 </body>
